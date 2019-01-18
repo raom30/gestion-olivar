@@ -19,4 +19,4 @@ app.use(express.json());
 //añade el prefijo api delante de la routa
 app.use('/api',routes);
 //puerto de escucha
-app.listen (3000);
+app.listen (3000); 
