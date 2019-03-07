@@ -19,7 +19,7 @@ let index = `
          <br>
          <ul style="padding-left: 50px">
            <li><b>Inicio</b>: Esta página con información.</li>
-           <li><b>Artículos</b>: Permite realizar operaciones CRUD sobre los olivos de la BD. </li>
+           <li><b>Olivos</b>: Permite realizar operaciones CRUD sobre los olivos de la BD. </li>
            <li><b>Clientes</b>: Permite realizar operaciones CRUD sobre los clientes de la BD.</li>
          </ul>
      </div>`;
@@ -42,7 +42,7 @@ window.addEventListener('load', function () {
     });
 
     document.getElementById('menu-articulos').addEventListener('click', function (e) {
-        verDocumentos('articulos');
+        verDocumentos('olivos');
         a.style.display = 'block';
         i.style.display = 'none';
         c.style.display = 'none';  c.innerHTML = '';       
