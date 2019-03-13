@@ -27,6 +27,7 @@ html {
 
 body {
   background: #f5f5f5;
+  background-image: url("images/olivos.jpg");
   color: #333;
   -webkit-font-smoothing: antialiased;
   line-height: 1.42857143;
@@ -36,7 +37,7 @@ body {
 nav {  
   padding: 10px;
   _background-color: var(--bgcolor-menu);
-  background-color: #2196f3;
+  background-color: #665D1D;
   width: 100%;
   position: fixed;
   font-weight: bolder;
