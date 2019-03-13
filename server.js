@@ -12,6 +12,14 @@ mongoose.connect(config.db_uri, { useNewUrlParser: true })
   .catch(err => console.log ('Error en la conexión a la BD'));
 
 //MIDDLEWARE
+
+app.use((req, res, next) => {
+  if (req.header('x-forwarded-proto') !== 'https')
+    res.redirect(`https://${req.header('host')}${req.url}`);
+  else
+    next();
+});
+
 app.use(express.static(path.join(__dirname,'public')));
 //para utilizar log
 app.use(morgan('dev'));
